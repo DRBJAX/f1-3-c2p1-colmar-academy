@@ -1,0 +1,877 @@
+html * {
+	font-size: 16px;
+	font-family: Mukta, "Hind Siliguri", Arial, sans-serif;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+.main_container {
+	display: flex;             
+	flex-direction: column;    
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*---------- Top Header ----------*/
+.header, .logo_container, .header_nav_bar {
+	display: flex;
+	align-items: center;
+}
+
+.header, .header_nav_bar .bar {
+	height: 5.5rem;
+}
+
+.logo_container span, .header_nav_bar p a {
+	color: #474747;
+}
+
+.header {
+	justify-content: space-between;
+	max-width: 100%;
+}
+
+.logo_container {
+	padding-left: 2.0rem;
+}
+.logo_container * {
+	display: inline-block;
+}
+
+.logo_container img {
+	height: 4.7rem;
+	padding-top: 0.4rem;
+}
+
+.logo_container * {
+	font-size: 2.0rem;
+}
+
+.logo_container span, .logo_container p {
+	letter-spacing: 1.5px;
+}
+
+.logo_container span {
+	font-weight: 900;
+}
+
+.logo_container p {
+	font-weight: 500;
+	color: #a6a6a6;
+}
+
+.header_nav_bar p:last-child {
+	padding-right: 2.0rem;
+}
+
+.header_nav_bar p a {
+	font-size: 1.7rem;
+	text-decoration: none;
+	transition: color 400ms ease-out;
+}
+
+.header_nav_bar p a:hover {
+	color: #b2b2b2;
+}
+
+.header_nav_bar .bar {
+	width: 1.5rem;
+	background-color: #b0e0e6;
+}
+
+.header_nav_small {
+	display: none;             
+}
+
+.header_nav_small img {
+		height: 3.7rem;
+		padding-top: 0.5rem;
+}
+
+.header_nav_small a:hover {
+	background-color: #dadada;
+	border-radius: 25%;
+}
+
+@media only screen and (max-width: 1280px) {
+	.logo_container p, .logo_container p span {
+		display: none;
+	} 
+}
+
+@media only screen and (max-width: 1024px) {
+	.header_nav_bar, .logo_container img {
+		display: none;
+	} 
+
+	.logo_container {
+		padding-left: initial;
+	}
+
+	.header_nav_small {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.header_nav_small img {
+		height: 2.8rem;
+		padding-top: 0.5rem;
+	}
+}
+
+/*---------- Top Banner  ----------*/
+.banner {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: #dadada;
+}
+
+.banner_image {
+	width: 59%;
+	padding: 3.2rem 2.5rem;
+}
+
+.banner_text_container {
+	padding: 0 5.0rem 0 2.5rem;
+}
+
+.banner_text_container h1 {
+	color:#474747;
+	font-size: 4.2rem;
+	font-weight: 900;
+	line-height: 1.0;
+}	
+
+.banner_text_container h3 {
+	color:#474747;
+	padding: 2.0rem 0 3.2rem;
+	font-size: 2.2rem;
+	font-weight: 600;
+	line-height: 1.4;
+}	
+
+.banner_btn {
+	text-align: center;
+	padding: 1.2rem 0;
+	background-color: #474747;
+}
+
+.banner_btn a {
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 400ms ease-out;
+}
+
+.banner_btn a:hover {
+	color: #b2b2b2;
+}
+
+@media only screen and (max-width: 1600px) {
+	.banner_text_container h1 {
+		font-size: 3.2rem;
+	} 
+
+	.banner_text_container h3 {
+		font-size: 1.6rem;
+	} 
+}
+
+@media only screen and (max-width: 1280px) {
+	.banner_text_container {
+		padding: 0 2.5rem 0 0.5rem;
+	}
+
+	.banner_text_container h3 {
+		padding: 1.0rem 0 2.4rem;
+	} 
+
+	.banner {
+		flex-direction: column;
+		align-items: center;
+	} 
+
+	.banner_image {
+		width: 100%;
+		padding: 0.2rem 0.2rem 3.2rem;
+	}
+
+	.banner_text_container {
+		padding: 0 0 3.2rem;
+	}
+
+	.banner_text_container h3{
+		padding-bottom: 2.0rem;
+	}
+
+	.banner_btn {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.banner_text_container {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	} 
+}
+
+@media only screen and (max-width: 480px) {
+	.banner_text_container h1 {
+		font-size: 2.2rem;
+	} 
+
+	.banner_text_container h3 {
+		font-size: 1.2rem;
+	} 
+}	
+/*---------- Main Top ----------*/
+.main_top, .info_subcontainer, .info_text {
+	display: flex;
+}
+
+.main_top {
+	max-width: 100%;
+}
+
+.jumbo_container {
+	width: 59%;
+	padding-left: 2.5rem;
+	border-right: 2px solid #dadada;
+}
+
+.jumbo_image {
+	width: 100%;
+	padding: 3.2rem 2.5rem 3.2rem 0;
+}
+
+.jumbo_text h1, .jumbo_text .author, .info_text h2 {
+	color: #474747;
+}
+
+.jumbo_text {
+	padding-right: 6.0rem;
+}
+
+.jumbo_text h1 {
+	font-size: 3.4rem;
+	font-weight: 900;
+	padding-bottom: 2.5rem;
+}	
+
+.jumbo_text .quote, .jumbo_text .author {
+	font-size: 1.4rem;
+}
+
+.jumbo_text .quote, .info_text h3 {
+	color: #6b6b6b;
+}
+
+.jumbo_text .quote {
+	padding-bottom: 3.8rem;
+	font-family: "Hind Siliguri";
+	line-height: 1.4;
+}
+
+.jumbo_text .author {
+	padding-bottom: 3.4rem;
+	font-weight: 500;
+}
+
+.info_container {
+	max-width: 41%;
+	padding-top: 3.2rem;
+}
+
+.info_subcontainer {
+	align-items: center;
+}
+
+.info_image {                  
+	max-width: 100%;
+	height: auto;
+}
+
+.info_image_mobile {
+	display: none;
+}
+
+.info_image.top {
+	padding: 0 2.2rem 1.75rem 1.75rem;
+}
+
+.info_image.middle, .info_image.bottom {
+	padding: 1.75rem 2.2rem 1.75rem 1.75rem;
+}
+
+.info_text {
+	flex-direction: column;
+	justify-content: space-between;
+	padding-right: 1.0rem;
+}
+
+.info_text.top {
+	margin-bottom: 1.45rem;
+}
+
+.info_text h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+.info_text h3 {	
+	padding: 1.2rem 0;
+	font-family: "Hind Siliguri";
+	font-size: 1.5rem;
+	line-height: 2.0rem;
+}
+
+.info_text a {
+	color: #527dff;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+.border_bottom {
+	width: 99.5%;
+	height: 6px;
+	margin-left: 1px;
+	border-top: 2px solid #dadada;
+	border-bottom: 2px solid #dadada;
+}
+
+.info_subcontainer.bottom {
+	background-color: #dadada;
+}
+
+@media only screen and (max-width: 1600px) {
+	.info_text h2 {
+		font-size: 1.8rem;
+	} 
+
+	.info_text h3 {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	} 
+
+	.info_text a {
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+	.jumbo_container {
+		width: 55%;
+	}
+
+	.info_container {
+		max-width: 45%;
+	}
+
+	.jumbo_text h1 {
+		font-size: 3.2rem;
+		padding-bottom: 2.0;
+	}
+
+	.jumbo_text .quote, .jumbo_text .author {
+		font-size: 1.2rem;
+	}
+
+	.jumbo_text .author {
+		padding-bottom: 3.0rem;
+		line-height: 1.3rem;
+	}
+
+	.info_image {
+		max-width: 60%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.jumbo_text h1 {
+		font-size: 2.8rem;
+	}
+
+	.jumbo_text .quote, .jumbo_text .author {
+		font-size: 1.0rem;
+	}
+
+	.jumbo_text .quote {
+		padding-bottom: 2.0rem;
+	}
+
+	.jumbo_text .author {
+		padding-bottom: 2.0rem;
+		line-height: 1.3rem;
+	}
+
+	.info_text h2 {
+		font-size: 1.4rem;
+	} 
+
+	.info_text h3 {
+		font-size: 1.0rem;
+		line-height: 1.3rem;
+	} 
+
+	.info_text a {
+		font-size: 1.0rem;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.jumbo_container, .border_bottom {
+		display: none;
+	}
+
+	.info_image {
+		display: none;
+	}
+
+	.info_image_mobile {
+		display: block;
+		max-width: 100%;
+	}
+
+	.info_container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 100%;
+		padding: 1.6rem 1.6rem 3.0rem 1.6rem;
+		border-bottom: 2px solid #dadada;
+	}
+
+	.info_subcontainer {
+		flex-direction: column;
+		width: 29.0rem;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.info_subcontainer.middle {
+		padding: 2.4rem 0;
+	}
+
+	.info_subcontainer.bottom {
+		background-color: #ffffff;
+	}
+
+	.info_text {
+		width: 100%;
+		padding-left: 1.5rem;
+		padding-top: 2.4rem;
+	}
+
+	.info_text.top {
+		margin-bottom: initial;
+	}
+
+	.info_text h2 {
+		font-size: 2.2rem;
+	}
+
+	.info_text h3 {
+		font-size: 1.4rem;
+	}
+
+	.info_text a {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.info_text h2 {
+		font-size: 1.6rem;
+	}
+
+	.info_text h3 {
+		font-size: 1.0rem;
+	}
+
+	.info_text a {
+		font-size: 1.1rem;
+	}
+}
+
+/*---------- Courses ----------*/
+.learning_container, .course, .course_container {
+	display: flex;
+}
+
+.learning_container, .course_container {
+	flex-direction: column;
+}
+
+.learning_container {
+	align-items: center;
+	padding: 0 8.5rem 5.0rem;
+	background-color: #dadada;
+}
+
+.learning_container h1, .course_text h2 {
+	color: #474747;
+}
+
+.learning_container h1 {
+	font-size: 3.4rem;
+	font-weight: 900;
+	padding: 3.4rem 0;
+}
+
+.course, .course_container, .course_container img, .course_text {
+	width: 100%;
+}
+.course, .course_container, .course_container img, .course_text {
+	max-width: 100%;
+}
+
+.course {
+	justify-content: center;
+}
+
+.course.top {
+	padding-bottom: 1.6rem;
+}
+
+.course_container:nth-child(2) {
+	margin: 0 2.2rem;
+}
+
+.course_text {
+	height: 17.0rem;
+	padding: 2.0rem 1.0rem 2.0rem 2.0rem;
+	margin-top: -3px;
+	background-color: #ffffff;
+}
+
+.course_text h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+.course_text h3, .course_text p {
+	color: #6b6b6b;
+	font-size: 1.5rem;
+	font-family: "Hind Siliguri";
+}
+
+.course_text h3 {
+	padding: 1.5rem 0 1.0rem;
+}
+
+.course p {
+	line-height: 2.0rem;
+}
+
+@media only screen and (max-width: 1600px) {
+	.course_text h2 {
+		font-size: 2.0rem;
+	}
+
+	.course_text h3, .course_text p {
+		font-size: 1.3rem;
+	}
+
+	.course_text p {
+		line-height: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+	.learning_container {
+		padding-left: 7.0rem;
+		padding-right: 7.0rem;
+	}
+
+	.course_text {
+		padding-top: 1.5rem;
+		padding-left: 1.0rem;
+	}
+
+	.course_text h2 {
+		font-size: 1.6rem;
+	}
+
+	.course_text h3, .course_text p {
+		font-size: 1.1rem;
+	}
+
+	.course_text h3 {
+		padding: 1.0rem 0;
+	}
+
+	.course_text p {
+		line-height: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.learning_container {
+		padding-left: 2.0rem;
+		padding-right: 2.0rem;
+		padding-bottom: 2.2rem;
+		border-bottom: 2px solid #dadada;
+		background-color: #ffffff;
+	}
+
+	.learning_container h1 {
+		padding: 2.5rem 0;
+	}
+
+	.course {
+		flex-direction: column;
+	}
+
+	.course.top {
+		padding-bottom: initial;
+	}
+
+	.course_container:nth-child(2) {
+		margin: initial;
+	}
+
+	.course_text {
+		height: auto;
+		margin-top: initial;
+		margin-bottom: 1.0rem;
+		padding: 0;
+		background-color: #dadada;
+	}
+
+	.course_text h2 {
+		padding: 2.2rem 2.0rem;
+		font-size: 2.0rem;
+	}
+
+	.course_container img, .course_text h3, .course_text p {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.course_text h2 {
+		padding: 1.6rem 1.4rem;
+		font-size: 1.5rem;
+	}
+}	
+/*---------- Video Section ----------*/
+.exhibit_container, .video_info_container, .exhibit_info_container, .exhibit_info, .exhibit_text {
+	display: flex;
+}
+
+.exhibit_container, .exhibit_info_container, .exhibit_text {
+	flex-direction: column;
+}
+
+.exhibit_container, .exhibit_container h1, .video_info_container {
+	width: 100%;
+}
+
+.exhibit_container, .exhibit_info {
+	align-items: center;
+}
+
+.exhibit_container h1, .exhibit_text h2 {
+	color: #474747;
+}
+
+.exhibit_container h1 {
+	padding: 3.4rem 0;
+	font-size: 3.4rem;
+	font-weight: 900;
+}
+
+.video_info_container video {
+	width: calc(59% - 4.9rem);
+	height: 100%;
+	margin: 0 2.5rem;
+	border: 4px solid #dadada;
+}
+
+.exhibit_info_container {
+	justify-content: center;
+	width: 41%;
+}
+
+.exhibit_image {
+	max-width: 100%;
+	padding: 1.75rem 2.0rem 1.75rem 1.75rem;
+}
+
+.exhibit_info.top {
+	background-color: #dadada;
+}
+
+.exhibit_info.bottom {
+	border-left: 2px solid #dadada;
+	border-bottom: 2px solid #dadada;
+}
+
+.exhibit_container .info_image.top {
+	padding: 1.75rem 2.2rem 1.75rem 1.75rem;
+}
+
+.exhibit_text {
+	justify-content: space-around;
+	padding-right: 1.0rem;
+}
+
+.exhibit_text h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 2.6rem;
+}
+
+.exhibit_text h3 {	
+	color: #6b6b6b;
+	padding: 1.2rem 0 0;
+	font-family: "Hind Siliguri";
+	font-size: 1.5rem;
+	line-height: 2.0rem;
+}
+
+@media only screen and (max-width: 1600px) {
+	.exhibit_text h2 {
+		font-size: 1.8rem;
+		line-height: 2.0rem;
+	} 
+
+	.exhibit_text h3 {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	} 
+}
+
+@media only screen and (max-width: 1440px) {
+	.exhibit_text h2 {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+	} 
+
+	.exhibit_text h3 {
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	} 
+}
+
+@media only screen and (max-width: 1280px) {
+	.exhibit_image {
+		max-width: 60%;
+	}
+
+	.exhibit_text h2 {
+		font-size: 1.4rem;
+		line-height: 1.6rem;
+	} 
+
+	.exhibit_text h3 {
+		font-size: 1.0rem;
+		line-height: 1.2rem;
+	} 
+}
+
+@media only screen and (max-width: 1024px) {
+	.exhibit_info_container {
+		display: none;
+	}
+
+	.exhibit_container h1 {
+		padding-top: 2.2rem;
+		padding-left: 2.0rem;
+	}
+
+	.video_info_container video {
+		width: 100%;
+		margin: 0 0 2.0rem 0;
+	}
+}
+
+/*---------- Exhibit Bottom Quote ----------*/
+.exhibit_quote_container {
+	border-bottom: 2px solid #dadada;
+}
+
+.exhibit_quote {
+	max-width: 59%;
+	padding: 2.5rem 3.5rem 3.5rem 2.5rem;
+}
+
+.exhibit_quote h2 {
+	color: #474747;
+	padding-bottom: 1.8rem;
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+
+.exhibit_quote p {
+	color: #6b6b6b;
+	font-family: "Hind Siliguri";
+	font-size: 1.4rem;
+	line-height: 1.4;
+}
+
+@media only screen and (max-width: 1600px) {
+	.exhibit_quote {
+		max-width: 80%;
+	} 
+}
+
+@media only screen and (max-width: 1024px) {
+	.exhibit_quote_container {
+		display: none;
+	} 
+}
+
+/*---------- Footer ----------*/
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer p, .footer .footer_nav {
+	padding: 2.2rem 0 5.0rem;
+}
+
+.footer p {
+	padding-left: 2.5rem;
+}
+
+.footer p, .footer_nav a {
+	color: #6b6b6b;
+	font-size: 1.4rem;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer_nav a:first-child {
+	padding-right: 1.0rem;
+}
+
+.footer_nav a:last-child {
+	padding-right: 2.0rem;
+}
+
+@media only screen and (max-width: 880px) {
+	.footer_nav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.footer p {
+		font-size: 1.0rem;
+	}
+}
